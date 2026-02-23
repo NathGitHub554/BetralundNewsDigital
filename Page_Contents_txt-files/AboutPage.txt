@@ -1,0 +1,26 @@
+<h3>What we do:</h3>
+<p>Betralund News Digital is the digital home of Betralund News, which reports the news through web, radio, and print. Our articles cover breaking news in Betralund, as well as developments in the wider world. We strive to report the news as best and as honestly as we can.</p>
+ <h3>Mission statement</h3>
+<p>To report the news with quality, integrity, and equality</p>
+<h3>Quality:</h3>
+<p>Our articles are robust and well-written, and the editorial team makes sure that the writing is easy to read and understand.</p>
+<h3>Integrity:</h3>
+<p>The news we report is gathered from verified sources, and rigorously fact-checked for reliability. We aim to make the information we present as factual and truthful as possible.</p>
+<h3>Equality:</h3>
+<p>We aim to be as bipartisan as possible and tell both sides of a story, without skewing it towards one side or the other. </p>
+<h3>Chief staff:</h3>
+<p>Elisabeth Bakken (CEO)</p>
+<p>Karl Berg (Chief Editor)</p>
+<p>Jai Thakur (Main radio anchor)</p>
+<p>Owen Wilson (Chief reporter)</p>
+
+<h3>History:</h3>
+<p>Betralund News Digital started in 1830 as a school newspaper created by three students, Eric Jensen, Jonas Berg, and Maria Hagen. Jonas Berg continued the project after graduation, and with great perseverance and determination built the small paper into a full-fledged business, the Betralund Herald, which became an official paper in 1850. It continued to grow, and in 1950, a radio station was established.</p>
+<p>BND.org, the official website of Betralund News Digital, was launched on September 21, 2000, and allowed international readers to access Betralund News content. Today, Betralund News can be accessed through print, radio, and the web, 24 hours a day, 7 days a week. Since our inception more than 200 years ago, we have continued our commitment to trustworthy, quality content, and will do so as we grow into the future.</p>
+
+<h3>Contact info:<h3>
+<p>Contact us by email, phone, or through this form</p>
+<p>Web Address: www.bnd.org</p>
+<p>Phone: + 47 555 12 345</p>
+<p>Email: info@bnd.org</p>
+<p>Contact form</p>
