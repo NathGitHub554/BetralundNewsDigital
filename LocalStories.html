@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="Betralund News Digital, local news, stories, community">
+<meta name="Description" content="Stories on current local events">
+<link rel="icon" type="image/x-icon" href="Assets/BND_Logo-favicon.png">
+<title>BND.org | Local News</title>
+	
+<link href="StoryStyles.css" rel="stylesheet" type="text/css">
+
+<style>
+	.heroImg {
+		width: 100%;
+		height: auto;
+		border-bottom: 10px solid black;
+	}
+	
+	.NewsStoriesTitle {
+		position: absolute;
+		top: 71%;
+		left: 13%;
+		text-align: center;
+		font-family: titleFont;
+		font-size: 10em;
+		color: white;
+		margin: 50px;
+		text-align: center;
+		text-shadow: 0px 0px 10px rgba(1,238,6,1.00);
+	}
+	
+	table#WorldStoryTable {
+		 width: 55%;
+		margin-right: auto;
+		margin-left: auto;
+		border-collapse: collapse;
+	}
+	
+	td {
+		padding: 20px;
+	}
+	
+	#latestStories {
+		margin-bottom: 100px;
+	}
+	
+	.thumbnail {
+		width: 200px;
+		height: 200px;
+		vertical-align: top;
+	}
+	
+	.storyTitle {
+		text-decoration: underline;
+		font-weight: bold;
+		color: black;
+		font-family: Arial, "Sans-serif";
+		font-size: 1.2em;
+	}
+	
+	.storyTitle:hover {
+		text-shadow: 0px 0px 5px rgba(1,238,6,1.00);
+		
+	}
+	.storyDesc {
+		font-family: Arial, "Sans-serif";
+		font-size: 1.1em;
+	}
+	
+	.ImgLink:hover {
+		opacity: 0.7;
+	}
+	
+	.text {
+		vertical-align: top;
+	}
+	
+	caption {
+		font-size: 2em;
+		font-family: Arial, "Sans-serif";
+		font-weight: bold;
+		margin-top: 50px;
+		margin-bottom: 20px;
+		
+	}
+	
+	#WorldStoryInfo, #LocalStoryInfo {
+		display: block;
+		font-family: Arial, "Sans-serif";
+		font-size: 1.25em;
+		line-height: 30px;
+		margin-right: auto;
+		margin-left: auto;
+		margin-top: 70px;
+		margin-bottom: 70px;
+		padding: 10px;
+		width: 70%;
+	}
+	
+	.aboutTitle {
+		height: 50px;
+		font-size: 2em;
+		font-weight: bold;
+		text-align: center;
+		text-shadow: 0px 0px 5px rgba(1,238,6,1.00);
+	}
+	
+	.topLink {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border: 5px solid black;
+		background-color: rgba(1,238,6,1.00);
+		border-radius: 25px;
+		margin-right: 60px;
+		margin-bottom: 60px;
+		float: right;
+		font-family: Arial;
+		font-weight: bold;
+		font-size: 1.5em;
+		color: black;
+	}
+	
+	.topLink:hover {
+		background-color: lightblue;
+		box-shadow: 0px 0px 10px rgba(1,238,6,1.00);
+		
+	}
+	
+	#storyCTA {
+		display: block;
+		width: 50%;
+		font-weight: bold;
+		color: black;
+		font-size: 2em;
+		font-family: titleFont;
+		padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 50px;
+		background-color: lightblue;
+		border: 4px solid black;
+		border-radius: 35px;
+		text-align: center;
+	}
+	
+	#storyCTA:hover {
+		box-shadow: 5px 5px 2px rgba(1,238,6,1.00)
+	}
+</style>
+</head>
+
+<body>
+<header> <img id="logo" src="Assets/BND_Logo.png" width="500" height="500" alt="Betralund News Digital logo"/>
+  <h1 id="name">BND</h1>
+ <nav id="topNav"><a href="Index.html">Home</a> <a href="LocalStories.html" class="current">Local News</a> <a href="WorldStories.html">World News</a> <a href="About.html">About</a></nav>
+</header>
+<main>
+	<img class="heroImg" src="Assets/LocalStory_Banner.jpg" width="1920" height="1080" alt="A rustic cabin in the Betralund countryside"/>
+	
+	<h2 class="NewsStoriesTitle" id="top">Local News Stories</h2>
+
+	<article id="WorldStoryInfo">
+	  <h3 class="aboutTitle">What are Local Stories?</h3>
+	  	<p>Local Stories cover current news happening on the island, from community events, to local crime, to the latest affairs of the government. Our reporters carefully investigate their stories, interviewing those involved to get the first-person view of the event. Read Local Stories for honest, factual, high-quality reporting from Betralund News Digital.</p>
+	  
+    </article>
+	
+	
+	<article id="latestStories">	
+	<table id="WorldStoryTable">
+	<caption>Latest Local Stories</caption>
+	  <tbody>
+	    <tr>
+	      <td><a href="StoryPages/LocalStory1_ShipFight.html" class="ImgLink"><img class="thumbnail" src="Assets/policeCar_Thumbnail.png" width="334" height="334" alt="Image of police outside the Vinstri Bar"/></a></td>
+	      <td class="text"><a href="StoryPages/LocalStory1_ShipFight.html" class="storyTitle">Ship Crew Arrested for Disorderly Conduct</a>
+			  <p class="storyDesc">Last Tuesday Vinstri police arrested five members of a ship’s crew for extensive damage to a seaport bar. This is the third incident involving a ship’s crew in the last year . . .</p>
+		  </td>
+        </tr>
+	    <tr>
+	      <td><a href="StoryPages/LocalStory2_HermitRescue.html" class="ImgLink"><img class="thumbnail" src="Assets/hermit_Img_Thumbnail.png" width="333" height="333" alt="Image of Christian Olavson, who speaks out about environmental issues"/></a></td>
+	      <td class="text"><a href="StoryPages/LocalStory2_HermitRescue.html" class="storyTitle">Hermit Saves Drowning Tourist, Advocates for Betralund's Forests</a>
+			  <p class="storyDesc">Last week, a hermit saved a tourist from drowning after she fell of a cliff trying to take a selfie. This comes as tourism has increased more than seventy percent in the past year . . .</p>
+		  </td>
+        </tr>
+      </tbody>
+  </table>
+</article>
+	
+<article id="LocalStoryInfo">
+<h3 class="aboutTitle">Read World Stories</h3>
+
+	
+<p>World stories cover breaking news from places across the globe. We cover wildfires, global conflicts, trade wars, and other events. Our dedicated reporters travel internationally to get these stories, and to get a first-person view of the situations that they are covering. Read Betralund News World Stories for honest, quality content on current events.</p>
+	
+<a id="storyCTA" href="WorldStories.html">Read World Stories</a>
+	
+</article>
+	
+<a href="#top" class="topLink">Top</a>
+</main>
+	
+<footer>
+	
+  <nav id="footerNav">
+	  <h3 class="ftrTitle">Links</h3>
+	  <ul id="footerLinks">
+	 	 <li><a href="Index.html">Home</a> </li>
+		  <li><a href="LocalStories.html">Local News</a></li>
+		  <li><a href="WorldStories.html">World News</a> </li>
+		 <li> <a href="About.html">About</a></li>
+	  </ul>
+  </nav>
+	
+  <address id="contact">
+  <h3 class="ftrTitle">Contact</h3>
+ <ul>
+    <li><strong>Phone:</strong> <a href="tel:+47555123456">+47-555-12-345</a> </li>
+    <li> <strong>Email:</strong> <a href="mailto:info@bnd.org">info@bnd.org</a> </li>
+    <li> <strong>Contact Form:</strong> <a href="About.html">Contact Form</a> </li>
+  </ul>
+  </address>
+	
+	
+</footer>
+	
+</body>
+</html>

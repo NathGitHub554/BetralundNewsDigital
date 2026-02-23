@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="Keywords" content="Betralund News Digital, home page, company information">
+<meta name="Description" content="The homepage of Betralund News Digital">
+<meta name="viewport" content = "width=device-width, initial-scale=1" />
+<link rel="icon" type="image/x-icon" href="Assets/BND_Logo-favicon.png">
+<title>BND.org | Home</title>
+<link href="StoryStyles.css" rel="stylesheet" type="text/css">
+<style>
+#indexHeroImg {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-bottom: 10px solid black;
+	margin-right: auto;
+	margin-left: auto;
+}
+#mainContent {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 2em;
+}
+#info {
+	flex-direction: column;
+}
+aside {
+	width: 20%;
+	margin-top: 20px;
+}
+aside#bookmarks {
+	padding: 25px;
+	padding-top: 0px;
+	border: 3px solid black;
+	height: 100%;
+	margin-left: 50px;
+}
+aside#latestStories {
+	margin-bottom: 100px;
+	margin-right: 50px;
+	padding: 25px;
+	padding-top: 0px;
+	border: 3px solid black;
+	height: 100%;
+}
+.bookmarkLink {
+	display: block;
+	text-decoration: underline;
+	font-weight: bold;
+	color: black;
+	font-family: Arial, "Sans-serif";
+	font-size: 1.1em;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.bookmarkLink:hover {
+	text-shadow: 0px 0px 5px rgba(1,238,6,1.00);
+}
+hr.mini {
+	display: block;
+	width: 85%;
+	height: 4px;
+	background-color: rgba(1,238,6,1.00);
+	margin-top: 0px;
+	margin-bottom: 30px;
+	margin-left: 0px;
+	border: none;
+}
+hr.break {
+	display: block;
+	width: 85%;
+	height: 4px;
+	background-color: rgba(1,238,6,1.00);
+	margin-top: 0px;
+	margin-bottom: 30px;
+	margin-left: 0px;
+	border: none;
+}
+hr.break {
+	display: block;
+	width: 100%;
+	height: 7px;
+	background-color: rgba(1,238,6,1.00);
+	margin-top: 100px;
+	margin-bottom: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+}
+article {
+	width: 40%;
+	margin: 20px;
+}
+article p {
+	font-size: 1.2em;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	line-height: 30px;
+	margin-bottom: 5em;
+}
+h3.contentTitle {
+	font-family: Arial, "Sans-serif";
+	font-size: 1.8em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+	margin-top: 30px;
+}
+h3.introTitle {
+	font-size: 3em;
+	margin-top: 0px;
+}
+/* -------------------Table CSS--------------------------------*/
+table#IndexNewsTable {
+	max-width: 100%;
+	margin: auto;
+	border-collapse: collapse;
+}
+td {
+	vertical-align: top;
+	padding-left: 7px;
+}
+td.topRow {
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.thumbnail {
+	max-width: 100%;
+	height: auto;
+}
+.storyTitle {
+	text-decoration: underline;
+	font-weight: bold;
+	color: black;
+	font-family: Arial, "Sans-serif";
+	font-size: 1.1em;
+}
+.storyTitle:hover {
+	text-shadow: 0px 0px 5px rgba(1,238,6,1.00);
+}
+.ImgLink:hover {
+	opacity: 0.7;
+}
+.text {
+	vertical-align: top;
+}
+#tableTitle {
+	font-family: Arial, "Sans-serif";
+	font-size: 1.8em;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+	padding-top: 30px;
+	border-bottom: 4px solid rgba(1,238,6,1.00);
+}
+/* -----------------------------------------------------------*/
+
+section.CTAlinks {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.readCTA:link {
+	align-self: center;
+	font-family: Arial, "Sans-serif";
+	font-size: 1.2em;
+	color: black;
+	font-weight: bold;
+	border: 5px solid black;
+	border-radius: 25px;
+	background-color: lightblue;
+	padding: 20px;
+}
+.readCTA:visited {
+	color: black;
+}
+.readCTA:hover {
+	background-color: rgba(1,238,6,1.00);
+	text-shadow: 0px 0px 10px rgba(1,238,6,1.00);
+}
+a.topLink {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: center;
+	color: black;
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 5px solid black;
+	background-color: rgba(1,238,6,1.00);
+	border-radius: 25px;
+	margin-right: 60px;
+	margin-bottom: 60px;
+	float: right;
+}
+.topLink:hover {
+	background-color: lightblue;
+	box-shadow: 0px 0px 10px rgba(1,238,6,1.00);
+}
+.storyDesc {
+	font-family: Arial, "Sans-serif";
+	font-size: 0.9em;
+	margin-top: 3px;
+}
+
+/* ----------------------------------MEDIA QUERIES ----------------------------------------------------*/
+	/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+nav#topNav {
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+footer {
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+address#contact, nav#footerNav {
+	margin: 0px;
+	border-bottom: none;
+}
+}
+
+/* Extra small devices (phones, 600px and down)*/
+@media only screen and (max-width: 600px) {
+#mainContent {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+aside#bookmarks, aside#latestStories, article#info {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#logo {
+	width: 20%;
+}
+#name {
+	font-size: 600%;
+}
+header {
+	flex-direction: column;
+	align-items: center;
+}
+nav#topNav {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4%;
+	font-size: 1em;
+}
+#topNav a:link, #topNav a:visited {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 7px;
+}
+a.topLink {
+	margin: 0px;
+	margin-top: 50px;
+	float: none;
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.readCTA {
+	width: 47%;
+	font-size: 1em;
+	text-align: center;
+	padding: 5px;
+}
+#info {
+	margin-bottom: 2.5em;
+}
+h3.contentTitle, #tableTitle {
+	margin-top: 50px;
+	font-size: 1.3em;
+}
+hr.mini {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+article p {
+	margin-bottom: 3em;
+}
+aside#latestStories {
+	order: 1;
+}
+aside#bookmarks {
+	order: 2;
+}
+article#info {
+	order: 3;
+}
+.ftrTitle {
+	font-size: 1.2em;
+}
+footer ul li {
+	font-size: 0.8em;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)*/
+@media only screen and (min-width: 600px) {
+#mainContent {
+	flex-direction: column;
+	justify-content: center;
+}
+aside#bookmarks, aside#latestStories, article#info {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#logo {
+	width: 18%;
+}
+#name {
+	font-size: 690%;
+}
+header {
+	flex-direction: column;
+	align-items: center;
+}
+nav#topNav {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 4%;
+	font-size: 1.0em;
+}
+#topNav a:link, #topNav a:visited {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 7px;
+}
+a.topLink {
+	margin: 0px;
+	margin-top: 50px;
+	float: none;
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.readCTA {
+	width: 47%;
+	font-size: 1em;
+	text-align: center;
+	padding: 5px;
+}
+#info {
+	margin-bottom: 2.5em;
+}
+h3.contentTitle, #tableTitle {
+	margin-top: 50px;
+	font-size: 1.3em;
+}
+	
+h3.contentTitle.introTitle {
+		font-size: 2.5em;
+	}
+hr.mini {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+article p {
+	margin-bottom: 3em;
+}
+aside#latestStories {
+	order: 1;
+}
+aside#bookmarks {
+	order: 2;
+}
+article#info {
+	order: 3;
+}
+.ftrTitle {
+	font-size: 1.5em;
+}
+footer ul li {
+	font-size: 1.2em;
+}
+}
+
+/* Medium devices (landscape tablets, 730px and up)*/ 
+@media only screen and (min-width: 730px) {
+#mainContent {
+	flex-direction: column;
+	justify-content: center;
+}
+aside#bookmarks, aside#latestStories, article#info {
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#logo {
+	width: 15%;
+}
+#name {
+	font-size: 690%;
+}
+
+nav#topNav {
+	font-size: 1.5em;
+}
+#topNav a:link, #topNav a:visited {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 7px;
+}
+a.topLink {
+	margin: 0px;
+	margin-top: 50px;
+	float: none;
+	width: 30%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.readCTA {
+	width: 47%;
+	font-size: 1em;
+	text-align: center;
+	padding: 5px;
+}
+#info {
+	margin-bottom: 2.5em;
+}
+h3.contentTitle, #tableTitle {
+	margin-top: 50px;
+	font-size: 1.3em;
+}
+	
+h3.contentTitle.introTitle {
+		font-size: 2.5em;
+	}
+hr.mini {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+article p {
+	margin-bottom: 3em;
+}
+aside#latestStories {
+	order: 1;
+}
+aside#bookmarks {
+	order: 2;
+}
+article#info {
+	order: 3;
+}
+.ftrTitle {
+	font-size: 1.5em;
+}
+footer ul li {
+	font-size: 1.2em;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up)*/
+@media only screen and (min-width: 992px) {
+#mainContent {
+	flex-direction: row;
+}
+aside#bookmarks {
+	width: 15%;
+	order: 1;
+}
+article#info {
+	width: 40%;
+	order: 2;
+}
+aside#latestStories {
+	width: 25%;
+	order: 3;
+}
+#logo {
+	width: 15%;
+}
+#name {
+	font-size: 750%;
+}
+header {
+	flex-direction: row;
+	align-items: baseline;
+}
+nav#topNav {
+	margin-left: auto;
+	margin-right: 20px;
+	align-self: center;
+	font-size: 1.5em;
+	margin-bottom: 0px;
+}
+#topNav a:link, #topNav a:visited {
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 7px;
+}
+a.topLink {
+	width: 10%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 60px;
+	margin-bottom: 60px;
+	float: right;
+}
+.readCTA {
+	width: 47%;
+	font-size: 1em;
+	text-align: center;
+	padding: 5px;
+}
+#info {
+	margin-bottom: 2.5em;
+}
+h3.contentTitle, #tableTitle {
+	margin-top: 30px !important;
+	font-size: 1.3em;
+}
+	
+	h3.contentTitle.introTitle {
+		font-size: 2.5em;
+	}
+	
+	.thumbnail {width: 200%;
+	height: auto;}
+hr.mini {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+article p {
+	margin-bottom: 3em;
+}
+
+.ftrTitle {
+	font-size: 1.5em;
+}
+footer ul li {
+	font-size: 1.2em;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up)*/
+@media only screen and (min-width: 1200px) {
+#mainContent {
+	flex-direction: row;
+}
+aside#bookmarks {
+	width: 20%;
+	order: 1;
+}
+article#info {
+	width: 40%;
+	order: 2;
+}
+aside#latestStories {
+	width: 20%;
+	order: 3;
+}
+#logo {
+	width: 10%;
+}
+#name {
+	font-size: 750%;
+}
+header {
+	flex-direction: row;
+	align-items: baseline;
+}
+nav#topNav {
+	align-self: center;
+	font-size: 1.5em;
+	margin-left: auto;
+	margin-bottom: 0px;
+	margin-right: 20px;
+}
+#topNav a:link, #topNav a:visited {
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 7px;
+}
+a.topLink {
+	width: 10%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 60px;
+	margin-bottom: 60px;
+	float: right;
+}
+.readCTA {
+	width: 47%;
+	font-size: 1em;
+	text-align: center;
+	padding: 5px;
+}
+#info {
+	margin-bottom: 2.5em;
+}
+h3.contentTitle, #tableTitle {
+	margin-top: 30px !important;
+	font-size: 1.8em;
+}
+	
+	h3.contentTitle.introTitle {
+		font-size: 3em;
+	}
+	
+	.thumbnail {width: 200%;
+	height: auto;}
+hr.mini {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+article p {
+	margin-bottom: 3em;
+}
+	
+
+.ftrTitle {
+	font-size: 1.5em;
+}
+footer ul li {
+	font-size: 1.2em;
+}
+}
+</style>
+</head>
+
+<body id="top">
+<header> <img id="logo" src="Assets/BND_Logo.png" alt="Betralund News Digital logo">
+  <h1 id="name">BND</h1>
+  <nav id="topNav"><a href="Index.html" class="current">Home</a> <a href="LocalStories.html">Local News</a> <a href="WorldStories.html">World News</a> <a href="About.html">About</a></nav>
+</header>
+<main> <img id="indexHeroImg" src="Assets/Index_heroImg.png" width="1920" height="1280" alt="Mountainside with trees and houses near the sea"> 
+  <!--The responsive display is flexbox, so I am wrapping these three items: two asides and the article, in another container so I can set the flex-direction to row, so they are lined up in a row.-->
+  <section id="mainContent">
+    <aside id="bookmarks">
+      <h3 class="contentTitle">Contents:</h3>
+      <hr class="mini">
+      <a href="#who" class="bookmarkLink">Who we Are</a> <a href="#what" class="bookmarkLink">What We Cover</a><a href="#why" class="bookmarkLink">Why Betralund News Digital?</a> </aside>
+    <article id="info">
+      <h3 class="contentTitle introTitle">Quality News You Can Trust</h3>
+      <p>We are Betralund News Digital, your premier news source for quality, factual reporting. We are based in Betralund, an island nation in the center of the Atlantic. Betralund News Digital, or BND, is the main news broadcasting company in the country, spreads the news through radio, print, and web. We focus on creating quality, truthful, and reliable stories, that you can trust. While many networks distort the news they present to their viewpoint, we try to simply report the news as it happens, and our goal is to be as unbiased as possible. <strong>Read Betralund News Digital for stories you can trust, every time.</strong></p>
+      <section class="CTAlinks"> <a class="readCTA" href="WorldStories.html">Read World News</a> <a class="readCTA" href="LocalStories.html">Read Local News</a> </section>
+      <hr class="break">
+      <h3 class="contentTitle introTitle">About Betralund News Digital</h3>
+      <h3 id="who" class="contentTitle">Who We Are</h3>
+      <p>Betralund News Digital is a news broadcasting company based in the island nation of Betralund. Founded as a school newspaper in 1830, we have been reporting the news for over 200 years. Currently, BND is based in Vinstri City in the downtown district. Our highly trained staff works incessantly to keep our readers and listeners updated with the latest information, crafting quality, trustworthy stories.</p>
+      <h3 id="what" class="contentTitle">What We Cover</h3>
+      <p>Betralund News Digital covers events on the island of Betralund, as well as breaking international news. Our content is in two categories: <a href="WorldStories.html"><strong>World News</strong></a>, which covers events happening in other countries, such as wildfires in England, and <a href="LocalStories.html"><strong>Local News</strong></a>, which covers events happening in the island of Betralund itself. Our stories range from business information, trade wars, weather, crime, and the environment, and all are written by qualified journalists with years of experience. <strong>Whatever stories you prefer, you can find the news you need at Betralund News Digital.</strong></p>
+      <h3 id="why" class="contentTitle">Why Betralund News Digital?</h3>
+      <p>At Betralund News Digital, we strive to tell the entire story as truthfully as possible. We don't hold back on telling what happened, no matter what we are reporting on. Additionally, our editors work tirelessly to make sure our stories are of the highest quality. In short, you should choose Betralund News Digital because you can trust our content, every time.</p>
+      <section class="CTAlinks"> <a class="readCTA" href="WorldStories.html">Read World News</a> <a class="readCTA" href="LocalStories.html">Read Local News</a> </section>
+    </article>
+    <aside id="latestStories">
+      <table id="IndexNewsTable">
+        <tbody>
+          <tr>
+            <th colspan="2" id="tableTitle">Latest Local and World Stories</th>
+          </tr>
+          <tr>
+            <td class="topRow"><a href="StoryPages/WorldStory2_BritishFires.html" class="ImgLink"><img class="thumbnail" src="Assets/ForestFire_Thumbnail.jpg" alt="Image of a forest fire in England"></a></td>
+            <td class="text topRow"><a href="StoryPages/WorldStory2_BritishFires.html" class="storyTitle">British Wildfire Wreaks Havoc</a>
+              <p class="storyDesc">A large wildfire has erupted in southern England . . .</p></td>
+          </tr>
+          <tr>
+            <td><a href="StoryPages/LocalStory1_ShipFight.html" class="ImgLink"><img class="thumbnail" src="Assets/policeCar_Thumbnail.png" alt="Image of police outside the Vinstri Bar"></a></td>
+            <td class="text"><a href="StoryPages/LocalStory1_ShipFight.html" class="storyTitle">Ship Crew Arrested</a>
+              <p class="storyDesc">Last Tuesday Vinstri police arrested five members of a ship’s crew . . .</p></td>
+          </tr>
+        </tbody>
+      </table>
+    </aside>
+  </section>
+  <a class="topLink" href="#top" >Top</a> </main>
+
+	
+<footer>
+	
+  <nav id="footerNav">
+	  <h3 class="ftrTitle">Links</h3>
+	  <ul id="footerLinks">
+	 	 <li><a href="Index.html">Home</a> </li>
+		  <li><a href="LocalStories.html">Local News</a></li>
+		  <li><a href="WorldStories.html">World News</a> </li>
+		 <li> <a href="About.html">About</a></li>
+	  </ul>
+  </nav>
+	
+  <address id="contact">
+  <h3 class="ftrTitle">Contact</h3>
+ <ul>
+    <li><strong>Phone:</strong> <a href="tel:+47555123456">+47-555-12-345</a> </li>
+    <li> <strong>Email:</strong> <a href="mailto:info@bnd.org">info@bnd.org</a> </li>
+    <li> <strong>Contact Form:</strong> <a href="About.html">Contact Form</a> </li>
+  </ul>
+  </address>
+	
+	
+</footer>
+</body>
+</html>
